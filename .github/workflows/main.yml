@@ -32,9 +32,9 @@ jobs:
       - name: deploy1
         run: |
           chmod +x .github/workflows/script/deploy.sh
-          ./.github/workflows/script/deploy.sh "${{ secrets.SSH_PASSWORD }}" "${{ secrets.SSH_PORT }}" "${{ secrets.SSH_USERNAME }}" "${{ secrets.SSH_HOST1 }}"
+          ./.github/workflows/script/deploy.sh "${{ secrets.SSH_PASSWORD1 }}" "${{ secrets.SSH_PORT }}" "${{ secrets.SSH_USERNAME1 }}" "${{ secrets.SSH_HOST1 }}"
 
       - name: deploy2
         run: |
           chmod +x .github/workflows/script/deploy.sh
-          ./.github/workflows/script/deploy.sh "${{ secrets.SSH_PASSWORD }}" "${{ secrets.SSH_PORT }}" "${{ secrets.SSH_USERNAME }}" "${{ secrets.SSH_HOST2 }}"
+          ./.github/workflows/script/deploy.sh "${{ secrets.SSH_PASSWORD2 }}" "${{ secrets.SSH_PORT }}" "${{ secrets.SSH_USERNAME2 }}" "${{ secrets.SSH_HOST2 }}"
