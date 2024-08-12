@@ -7,7 +7,7 @@ while IFS= read -r path; do
 
 
   case "$path" in
-    */home/kevin/test*)
+    *test*)
       echo "$folder"
       sshpass -p $1 ssh -p $2 $3@$4 "mkdir -p $folder"  < /dev/null &&
       sshpass -p $1 scp -P $2 -r "$path" $3@$4:"'$target'"
